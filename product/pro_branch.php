@@ -10,33 +10,33 @@
         
             if (isset($_POST['add']) == true)
             {
-                header('Location:staff_add.php');
+                header('Location:pro_add.php');
                 exit();
             }
 
-            $staff_code = $_POST['staffcode'];
+            $pro_code = $_POST['procode'];
 
-            if (isset($_POST['staffcode']) == false)
+            if (isset($_POST['procode']) == false)
             {
-                header('Location:staff_ng.php');
+                header('Location:pro_ng.php');
                 exit();
             }
 
             if (isset($_POST['disp']) == true)
             {
-                header('Location:staff_disp.php?staffcode='.$staff_code);
+                header('Location:pro_disp.php?procode='.$pro_code);
                 exit();
             } 
 
             if (isset($_POST['edit']) == true)
             {
-                header('Location:staff_edit.php?staffcode='.$staff_code);
+                header('Location:pro_edit.php?procode='.$pro_code);
                 exit();
             }
 
             if (isset($_POST['delete']) == true)
             {
-                header('Location:staff_delete.php?staffcode='.$staff_code);
+                header('Location:pro_delete.php?procode='.$pro_code);
                 exit();
             }
 
